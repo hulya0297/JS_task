@@ -36,7 +36,7 @@ const image = document.querySelector('.image');
 const imgBtn = document.querySelector('.imgBtn');
 
 imgBtn.addEventListener('click', function(){
-    image.setAttribute('src',`.task3/img/${imgFlowers[index]}`);
+    image.setAttribute('src',`img/${imgFlowers[index]}`);
     index++
        
 });
