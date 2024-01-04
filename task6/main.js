@@ -1,5 +1,5 @@
 
-let imgArr=['img1.jpg','img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg'];
+let imgArr = ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg'];
 let index = 0;
 
 
@@ -10,21 +10,21 @@ const rightswpie = document.querySelector(".right_icon");
 const defaultslider = imgArr.length;
 
 
-rightswpie.addEventListener('click', function(){
+rightswpie.addEventListener('click', function () {
     index++;
-    if(index === defaultslider){
+    if (index === defaultslider) {
         index = 0;
-       
+
     }
     defaultimg.setAttribute('src', `task6img/${imgArr[index]}`);
 
- 
+
 
 })
-leftswipe.addEventListener('click', function(){
+leftswipe.addEventListener('click', function () {
     index--;
-    if(index < 0){
-        index = defaultslider-1;
+    if (index < 0) {
+        index = defaultslider - 1;
 
     }
     defaultimg.setAttribute('src', `task6img/${imgArr[index]}`);
@@ -32,6 +32,6 @@ leftswipe.addEventListener('click', function(){
 })
 
 
-    
-    
+
+
 
